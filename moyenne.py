@@ -22,9 +22,8 @@ def moyenne(valeurs):
 
     ---
     """
-    except ValueError :
-        print(liste vide !)
-        return 0
+    if not valeurs:
+        raise ValueError("liste vide !")
     S=0
     for elem in valeurs:
         S+=elem
